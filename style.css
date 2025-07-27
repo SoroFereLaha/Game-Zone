@@ -124,3 +124,69 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+/*Media Acceuil fondu*/
+
+@media screen and (max-width: 1350px) {
+    .bloc-gauche-acceuil {
+        width: 60%;
+    }
+
+    .bloc-droit-acceuil {
+        background-position: 72% 10%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .acceuil {
+        height: 600px;
+    }
+    h1 {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+    .acceuil p {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .btn-acceuil {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+    .bloc-gauche-acceuil {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .acceuil {
+        height: 450px;
+    }
+    h1 {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+    .acceuil p {
+        font-size: 25px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+
+    .btn-acceuil {
+        padding: 8px;
+    }
+    .b1 {
+        margin-left: 2vw;
+    }
+    .b2 {
+        margin-left: 10px;
+    }
+    .bloc-gauche-acceuil {
+        box-shadow: 20px 0 100px 100px #000;
+        width: 40%;
+    }
+    
+}
