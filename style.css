@@ -379,7 +379,7 @@ h1 {
     background-position: center;
 }
 .btn-modale:nth-child(1) {
-    background-image: url(ressources/10.jpg);
+    background-image: url(ressources/1.jpg);
 }
 .btn-modale:nth-child(2) {
     background-image: url(ressources/2.jpg);
@@ -414,7 +414,10 @@ h1 {
     bottom: 0;
     background: rgba(0,0,0,0.75);
     z-index: 1000;
-    /*display: none;*/
+    display: none;
+}
+.active-modale {
+    display: block;
 }
 
 .bloc-img {
