@@ -9,6 +9,10 @@ body{
     background: #f1f1f1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*------------Navigation----------*/
 
 nav {
@@ -566,4 +570,130 @@ h1 {
 .infos-carte img {
     margin-right: 7px;
     width: 20px;
+}
+
+/*------------Section formulaire----------*/
+
+/* Titre de la section contact */
+.titre-contact {
+    border-top: 1px dashed #000;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin: 3rem 0 2rem 0;
+    font-weight: 400;
+}
+
+/* Section contact */
+#contact {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Formulaire */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Labels */
+#contact label {
+    font-weight: 400;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Inputs et textarea */
+#contact input[type="text"],
+#contact textarea {
+    padding: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-family: inherit;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact input[type="text"]:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #999;
+}
+
+/* Textarea spécifique */
+#contact textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+/* Bouton du formulaire */
+.form-btn {
+    background: white;
+    color: #333;
+    padding: 1.2rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+}
+
+.form-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+    border-top: 1px dashed #000;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titre-contact {
+        font-size: 2rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+    
+    #contact {
+        margin: 0 1rem 3rem 1rem;
+        padding: 1.5rem;
+        max-width: none;
+    }
+    
+    #contact input[type="text"],
+    #contact textarea {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    #contact label {
+        font-size: 1rem;
+    }
+    
+    .form-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    #contact textarea {
+        min-height: 140px;
+    }
 }
